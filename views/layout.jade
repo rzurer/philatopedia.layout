@@ -1,0 +1,35 @@
+!!! 5
+html
+  head
+    title Philatopedia
+    include _css
+    include _scripts
+body
+    .welcome
+        label#welcome
+    #result
+    .header
+        .headertext
+            a(href="/")
+                label philatopedia
+        ul#menu.menu
+             li.active
+                a#home Home
+             li
+                a#sandbox Sandbox
+             li
+                a#usercollection My Collection
+             li
+                a#add Add
+             li#loginMenu
+                a#signin Signin
+             li#logoutMenu
+                a#signout Logout
+            .logincontainer
+                .logincontrols
+                    input#usernameInput.styled(type='text')
+                    button#loginButton.blue-button Sign In
+    .content
+        block content
+script
+    initializelayout(!{JSON.stringify(user)});
