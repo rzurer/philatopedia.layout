@@ -1,4 +1,4 @@
-/*globals  $*/
+/*globals window, $*/
 "use strict";
 var initializeHome = function (user) {
 	$(function () {

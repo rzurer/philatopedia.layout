@@ -4,8 +4,9 @@ var application,
     jade = require('jade'),
 	flash = require('connect-flash'),
 	browserify = require('browserify'),
-    routes = require('./routes'),
     config = require('./config'),
+    urls = require('./modules/urls').urls,
+    routes = require('./modules/routes').routes(urls),
     app = module.exports = express();
 config.configure(app, express, flash, browserify);
 routes.initialize(app);

@@ -14,10 +14,12 @@ var initializelayout = function (user) {
             },
             menuControls = {
                 menu : $('#menu'),
+                banner : $('#banner'),
                 homeLink : $('#home'),
                 sandboxLink : $('#sandbox'),
                 usercollectionLink : $('#usercollection'),
                 addLink : $('#add'),
+                adminLink : $('#admin'),
                 signinLink : $('#signin'),
                 signoutLink : $('#signout')
             };

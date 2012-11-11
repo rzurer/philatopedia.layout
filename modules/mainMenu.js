@@ -4,10 +4,12 @@ exports.mainMenu = function (urls) {
     return {
         initializeControls : function (controls) {
             menu = controls.menu;
+            controls.banner.attr('href', urls.home);
             controls.homeLink.attr('href', urls.home);
             controls.sandboxLink.attr('href',  urls.sandbox);
             controls.usercollectionLink.attr('href',  urls.usercollection);
             controls.addLink.attr('href',  urls.add);
+            controls.adminLink.attr('href',  urls.admin);
             controls.signinLink.attr('href', urls.poundsign);
             controls.signoutLink.attr('href', urls.poundsign);
         },
